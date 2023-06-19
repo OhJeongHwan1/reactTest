@@ -1,23 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Hlogo = () => {
+  return (
+    <header>
+      <h1>Logo</h1>
+    </header>
+  );
+};
+
+const Anav = () => {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <a href="#">메뉴1</a>
+        </li>
+        <li>
+          <a href="#">메뉴2</a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+const Bsection = ({ amumal }) => {
+  return (
+    <section>
+      <p>{amumal}</p>
+    </section>
+  );
+};
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hlogo />
+      <Anav />
+      <Bsection amumal="Hello World!" />
     </div>
   );
 }
