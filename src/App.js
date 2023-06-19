@@ -32,6 +32,14 @@ const Bsection = ({ amumal }) => {
   );
 };
 
+const Cfooter = () =>{
+  return(
+    <footer>
+      <p> 하단바 입니다. </p>
+    </footer>
+  );
+};
+
 function App() {
   return (
     <div>
