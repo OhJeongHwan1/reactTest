@@ -46,6 +46,7 @@ function App() {
       <Hlogo />
       <Anav />
       <Bsection amumal="Hello World!" />
+      <Cfooter/>
     </div>
   );
 }
