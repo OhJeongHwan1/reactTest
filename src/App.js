@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter from './usestate'
+import InputSample from './inputSample'
 
 const Hlogo = () => {
   return (
@@ -32,14 +34,18 @@ const Bsection = ({ amumal }) => {
   );
 };
 
-const Cfooter = () =>{
+function Cfooter ({istrue}){
   return(
     <footer>
-      <p> 하단바 입니다. </p>
+      {istrue && <b>진실입니다</b>}
+      안녕
     </footer>
   );
 };
 
+Cfooter.defaultProps ={
+  istrue: true
+}
 function App() {
   return (
     <div>
@@ -47,6 +53,8 @@ function App() {
       <Anav />
       <Bsection amumal="Hello World!" />
       <Cfooter/>
+      <Counter/>
+      <InputSample />
     </div>
   );
 }
